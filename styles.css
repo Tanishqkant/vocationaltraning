@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.hamburger {
+    display: none;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.product {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: calc(33.333% - 2rem);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h2 {
+    margin: 1rem 0;
+}
+
+.product p {
+    margin-bottom: 1rem;
+}
+
+.enquiry-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.enquiry-btn:hover {
+    background-color: #3e8e41;
+}
+
+.size-chart {
+    margin: 2rem 0;
+}
+
+.size-chart h2 {
+    margin-bottom: 1rem;
+}
+
+.size-chart table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.size-chart th,
+.size-chart td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.size-chart th {
+    background-color: #f2f2f2;
+}
+
+form {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-left: 50%;
+}
+
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 1rem;
+}
+
+.social-media img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Responsive design */
+
+ @media (max-width: 768px) {
+   .nav-links {
+        display: none;
+    }
+
+   .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+   .hamburger span {
+        background-color: #fff;
+        display: block;
+        height: 2px;
+        margin: 4px 0;
+        width: 20px;
+    }
+
+   .nav-links.show {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+   .nav-links.show li {
+        margin-bottom: 1rem;
+    }
+
+   .nav-links.show a {
+        color: #fff;
+    }
+} 
+ Add this to the existing CSS code 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup .close-popup {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup .close-popup:hover {
+    background-color: #3e8e41;
+  }
